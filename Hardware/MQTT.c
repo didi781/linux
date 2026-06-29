@@ -3,9 +3,9 @@
 #include "Delay.h"
 #include "Serial.h"
 
-#define CONNECT_WIFI "AT+CWJAP=\"dydy\",\"123456789\"\r\n"
-#define MQTT_USER_CFG "AT+MQTTUSERCFG=0,1,\"esp32\",\"mqtt1\",\"123456\",0,0,\"\"\r\n"
-#define MQTT_CONN "AT+MQTTCONN=0,\"192.168.134.245\",1883,0\r\n"
+#define CONNECT_WIFI "AT+CWJAP=\"WIFI名字\",\"密码\"\r\n"
+#define MQTT_USER_CFG "AT+MQTTUSERCFG=0,1,\"客户端名字\",\"服务端名字\",\"密码\",0,0,\"\"\r\n"
+#define MQTT_CONN "AT+MQTTCONN=0,\"服务端地址\",1883,0\r\n"
 #define MQTT_SUB "AT+MQTTSUB=0,\"dt_mqtt/led\",1\r\n"
 
 void MQTT_Init(void)
