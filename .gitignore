@@ -1,0 +1,17 @@
+# Qt Creator 用户配置文件（包含本地路径信息）
+*.pro.user
+
+# Qt 构建缓存
+.qmake.stash
+
+# 编译产物
+Makefile
+FullProject
+moc_*
+ui_*
+qrc_*
+*.o
+*.obj
+
+# 构建目录
+build-*/
